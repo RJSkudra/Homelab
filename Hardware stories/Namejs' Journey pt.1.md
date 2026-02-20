@@ -1,0 +1,12 @@
+A small Lenovo M920Q office computer with in i5-8500T inside with 32GB of RAM.
+
+![](attachments/Pasted%20image%2020260220021942.png)
+# The stochastic beginnings
+
+Namejs started out his journey with Proxmox. As I didn't own my own local network and didn't want to mess with a lot of IP's for each LXC and VM in that network I was working in, I wanted to only expose one IP in this network. Tried to brute force knowledge in my head and quickly set up an extra NAT. I did muck up iptables and the network config by brute forcing the knowledge :D But I have done stuff like this to systems which I can easily replicate and that don't hold any important info. I didn't ever lose data that was important, no one wants to live a digi-spicy life.
+
+I reinstalled Proxmox, took a break from bruteforcing and just sat down to read. Thought that it would be fun to experiment with OPNsense VM and have it work as a small router for my internal network. The VM needed 2 connections, one for management (also LAN), one for WAN (this was basically the physical home network). Several times did I screw myself out of the access of the web GUI and reinstalled the VM, but in the end I got everything working. Set up some Windows VMs got them to ping each other. Tried pinging from my own client PC to the Windows VMs and tried to set up routing. So far so good, but didn't see UX problems from it... yet.
+
+In my last setup iterations I had a VPN so that I could connect to my services without any problems. At first I used ZeroTier One which was plenty fast, could work with CGNAT and didn't need to have a port open. This worked fine and dandy, no extra complexities while I brute forced my individual "creative" ideas and workflows by once again restricting myself and using tools the ways they probably were not meant to be used, but probably could be used with enough tweaks.
+
+Well, in my setup I had made a complex configuration of a double NAT which is not recommended by ZeroTier. When I read the documentation ;) , then it clicked that setting up routing on the client systems outside this "onion" NAT would be cumbersome and overly complex the moment I would try to scale anything or try to connect from other devices. I just scrapped it :D. There was new experience and better understanding about networking. I got far enough to not feel like I wasted my time. Reinstall it is, but this time a different OS.

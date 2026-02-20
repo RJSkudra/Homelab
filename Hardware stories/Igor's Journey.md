@@ -1,0 +1,11 @@
+![](attachments/Pasted%20image%2020260220022128.png)
+
+The purchase of Igor lined up with the 2k19's deadly flu and shortages in Raspberry Pi warehouses. Had to make due with what was available. I did (and still do) like to experiment with as many constraints as possible, to get the most efficient and creative mechanism to work reliably. Creativity indeed shines through best when we are shackled by lacking resources.
+
+First big learning steps was the series made by [@NovaspiritTech](https://www.youtube.com/@NovaspiritTech) via YouTube (RIP). The guy made simple short tutorials of how to set up Portainer, Docker Compose stacks and how Docker works. It was fun to experiment with His own Portainer templates and check out all of the Starr apps, how they are set up. It was a good beginning for this learning journey!
+
+Major problem with the RAM amount was that some apps just consume more and more of it! Some of them just slowly fill up the poor RAM chip with logs and and other maintenance task stuff until the system itself locks up. One way to fix this problem was to just restart the system at night, when no one would be using Pi-Hole, SMB shares or anything else. This is not a production ready idea.
+
+Another alternative was to just have resources be restricted for specific Docker containers. I knew that that is possible, because Portainer allowed to set limits in the UI, but for some reason it didn't allow me to do that. Digging deeper found out stuff about cgroups, edited the `/boot/firmware/cmdline.txt` file and added `cgroup_enable=memory swapaccount=1 cgroup_memory=1 cgroup_enable=cpuset`. But for some reason the cgroups didn't want to cooperate and I gave up on that idea. Later on I did check that specific firmware and OS versions had this specific problem, but I just allowed stuff to simply restart, because I had to finish my higher education and well the setup had been reinstalled several times, due to me mucking about and installing all kinds of random packages to diagnose other older problems. 
+
+The setup worked well enough at the time.
