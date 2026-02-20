@@ -8,6 +8,6 @@ Later on I got a bigger desk that opened up a chance for a new hardware purchase
 
 Got myself a new partner with his own journey - [Namejs' Journey pt.1](Hardware%20stories/Namejs'%20Journey%20pt.1.md)
 
-There was a point when I couldn't give too much of my free time to troubleshoot and I did have to store information and media safely - [[Namejs' Journey pt.2]]
+There was a point when I couldn't give too much of my free time to troubleshoot and I did have to store information and media safely - [Namejs' Journey pt.2](Hardware%20stories/Namejs'%20Journey%20pt.2.md)
 
-As Namejs didn't have enough connections for more storage, I had to get something new - [[Koknesis' new beginnings]]
+As Namejs didn't have enough connections for more storage, I had to get something new - [Koknesis' new beginnings](Hardware%20stories/Koknesis'%20new%20beginnings.md)
