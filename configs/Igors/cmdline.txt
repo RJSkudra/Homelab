@@ -1,0 +1,1 @@
+root=PARTUUID=3db938b9-02 rootfstype=ext4 rootwait fsck.repair=yes net.ifnames=0 logo.nologo console=tty1 usbcore.autosuspend=-1
